@@ -2,15 +2,15 @@ import warnings
 
 from .vanilla import MODNetModel
 
-try:
-    from .bayesian import BayesianMODNetModel
-except ImportError:
-    warnings.warn(
-        "BayesianMODNetModel is deprecated and may be removed in the future.",
-        DeprecationWarning,
-    )
+#try:
+#    from .bayesian import BayesianMODNetModel
+#except ImportError:
+#    warnings.warn(
+#        "BayesianMODNetModel is deprecated and may be removed in the future.",
+#        DeprecationWarning,
+#    )
 
-    BayesianMODNetModel = None
+#    BayesianMODNetModel = None
 
 from .ensemble import EnsembleMODNetModel
 
