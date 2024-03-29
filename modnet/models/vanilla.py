@@ -827,6 +827,8 @@ class MODNetModel:
                 else:
                     score.append(loss(y_true, y_pred[i]))
 
+                score.append(loss(y_true, y_pred[i]))
+
         return np.mean(score)
 
     def _make_picklable(self):
